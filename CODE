@@ -1,0 +1,22 @@
+#PYTHON CALCULATOR:
+Operator = input("Enter your operator which you want to operate: +, -, *, / : ")
+Num1 = float(input("enter the first number: "))
+Num2 = float(input("enter the second number: "))
+
+if Operator== "+":
+    result = Num1 + Num2
+    print(result)
+elif Operator== "-":
+    result = Num1 - Num2            
+    print(result)
+elif Operator== "*":
+    result = Num1 * Num2
+    print(result)
+elif Operator== "/":
+    if Num2 == 0:
+        print("Error: Division by zero is not allowed!")
+    else:
+        result = Num1 / Num2
+        print(result)
+else: 
+    print(f"{Operator} is not a valid operator")
